@@ -11,6 +11,10 @@ export class TestRail {
   }
 
   public createRun(name: string, description: string) {
+    if (this.options.runId != null){
+      this.runId = this.options.runId;
+      return;
+    }
     axios({
       method: 'post',
       url: `${this.base}/add_run/${this.options.projectId}`,
