@@ -11,7 +11,15 @@ export class TestRail {
   }
 
   public createRun(name: string, description: string) {
-    if (this.options.runId != null){
+    console.log(
+      '\n',
+      ` ------------- RunID ------------
+        ${this.options.runId}
+      `,
+      '\n'
+    );
+
+    if (this.options.runId != null) {
       this.runId = this.options.runId;
       return;
     }
