@@ -11,18 +11,9 @@ export class TestRail {
   }
 
   public createRun(name: string, description: string) {
-    console.log(
-      '\n',
-      ` ------------- RunID ------------
-        ${this.options.runId}
-      `,
-      '\n'
-    );
 
-    if (this.options.runId != null) {
-      this.runId = this.options.runId;
-      return;
-    }
+    this.runId = this.options.runId;
+    /*
     axios({
       method: 'post',
       url: `${this.base}/add_run/${this.options.projectId}`,
@@ -42,6 +33,7 @@ export class TestRail {
         this.runId = response.data.id;
       })
       .catch(error => console.error(error));
+      */
   }
 
   public deleteRun() {
