@@ -1,10 +1,17 @@
 {
-  "name": "cypress-testrail-reporter",
+  "name": "@linecorp/cypress-testrail-reporter",
   "version": "1.1.0",
   "description": "A Testrail reporter for cypress including TestRail API basic library",
+  "publishConfig": {
+    "registry": "http://repo.linecorp.com/content/repositories/internal-npm/"
+  },
   "main": "index.js",
   "private": false,
-  "keywords": ["cypress", "testrail", "reporter"],
+  "keywords": [
+    "cypress",
+    "testrail",
+    "reporter"
+  ],
   "author": {
     "name": "Milutin Savovic",
     "email": "mickosavovic@gmail.com"
